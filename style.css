@@ -1,0 +1,303 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter";
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transform-style: preserve-3d;
+    background-color: #d9d9d9;
+}
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+header nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "DM Serif Display";
+    font-size: 24px;
+}
+.logo img{
+    height: 50px;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 1.5rem;
+    font-weight: 300;
+    font-size: 0.83rem;
+    transition: transform 1s ease;
+}
+header ul a:hover{
+    transform: scale(1.1);
+}
+.search a {
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+.hamburguer{
+    padding-left: 1.5rem;
+}
+.hamburguer a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+.hamburguer .bar{
+    position: relative;
+    width: 52%;
+    height: 1px;
+    background-color: white;
+    border-radius: 2px;
+}
+.hamburguer .bar::before,
+.hamburguer .bar::after {
+    content: "";
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.hamburguer .bar::before {
+    top: -4.5px;
+}
+.hamburguer .bar::after {
+    top: 4.5px;
+}
+
+main{
+    position: relative;
+    background-color: #002900;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+main::before{
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.2);
+}
+.img3{
+    position: absolute;
+    width: 200%;
+    top: calc(50%);
+    left: calc(50%);
+    filter: blur(1px);
+    z-index: 1;
+    pointer-events: none;
+}
+.img2{
+    position: absolute;
+    width: 150%;
+    top: calc(50%);
+    left: calc(50%);
+    z-index: 3;
+    filter: blur(0px);
+    background-clip: content-box;
+    pointer-events: none;
+}
+.img1{
+    position: absolute;
+    width: 150%;
+    top: calc(50%);
+    left: calc(50%);
+    filter: blur(5px);
+    z-index: 4;
+    background-clip: content-box;
+    pointer-events: none;
+}
+.text{
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50% ;
+    text-align: center;
+    color: white;
+    pointer-events: auto;
+}
+::selection {
+    background: rgba(0, 53, 0, 0.5);   
+}
+.text h2{
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+.text h1{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+    text-shadow: 5px 5px 70px rgba(255, 255, 255, 0.6);
+}
+.vignette{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 60%, rgba(0,0,0,1));
+    pointer-events: none;
+}
+.parallax{
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
+}
+
+@media (max-width: 1100px){
+    .text h1{
+        font-size: 5.8rem;
+    }
+    .text h2{
+        font-size: 4.7rem;
+    }
+}
+
+@media (max-width: 725px){
+    .text h1{
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+    .text h2{
+        font-size: 4.1rem;
+        line-height: 1.1;
+    }
+    header nav{
+        padding: 0 1rem;
+    }
+    .logo img{
+        height: 40px;
+    }
+    header ul a{
+        font-size: 0.73rem;
+        padding: 0 0.9rem;
+    }
+    .search a{
+        font-size: 0.85rem;
+        padding: 0 1.8rem;
+    }
+    .hamburguer{
+        padding-left: 0.9rem;
+    }
+    .hamburguer a{
+        width: 30px;
+        height: 30px;
+    }
+    .img3{
+        width: initial;
+        height: 320%;
+    }
+    .img2{
+        width: initial;
+        height: 240%;
+    }
+    .img1{
+        width: initial;
+        height: 240%;
+    }
+}
+
+@media (max-width:520px){
+    .text h1{
+        font-size: 3.3rem;
+    }
+    .text h2{
+        font-size: 2.6rem;
+    }
+}
+.section-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.section-title h1{
+    font-family: "Nunito";
+    font-weight: bold;  
+    font-size: 48px;
+
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 3rem;
+    gap: 3rem;
+}
+.about-text{
+    width: 50%;
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: 600;  
+    font-size: 16px;
+    color: #555555;
+}
+.about-text a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #3c7836;
+}
+.about-bird{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about-bird-3d{
+    display: flex;
+    align-items: center;
+}
+.about-bird-3d #model{
+    height: 100%;
+    width: 40vw;
+}
+.about-bird img{
+    height: 581px;
+    filter: drop-shadow(-20px 10px 10px rgba(0,0,0,0.25));
+}
+strong{
+    font-weight: bolder;
+}
+
+
+.HIW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 3rem;
+    gap: 3rem;
+}

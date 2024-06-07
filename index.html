@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdSense - The Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logot.png">
+                <p>BirdSense</p>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Data</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+                <li class="search">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <!--<li class="hamburguer">
+                    <a href="#">
+                        <div class="bar"></div>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="vignette"></div>
+        <img src="camada3.png" data-speedx="0.12" data-speedy="0.15" data-speedz="0" data-rotate="0" data-distance="200"
+            class="parallax img3">
+        <div data-speedx="0.1" data-speedy="0.12" data-speedz="0.05" data-rotate="0.03" class="parallax text">
+            <h2>The project</h2>
+            <h1>BirdSense</h1>
+        </div>
+        <img src="camada2.png" data-speedx="0.08" data-speedy="0.15" data-speedz="0.05" data-rotate="0.1"
+            data-distance="400" class="parallax img2">
+        <img src="camada1.png" data-speedx="0.05" data-speedy="0.1" data-speedz="0.1" data-rotate="0.15"
+            data-distance="600" class="parallax img1">
+    </main>
+    <div class="section-title">
+        <h1>About</h1>
+    </div>
+    <section class="about">
+        <div class="about-text">
+            <p><strong>BirdSense</strong> is an innovative app that uses deep learning to identify bird species from
+                photos instantly.
+                Leveraging Keras and TensorFlow, it offers precise bird identification at your fingertips. Discover the
+                joy of bird watching: <strong><a href="passarin.html">download BirdSense today!</a></strong></p>
+        </div>
+        <div class="about-bird">
+            <div class="about-bird-3d">
+                <model-viewer id="model" src="./birdorange/scene.gltf" autoplay shadow-intensity="0.7" camera-controls
+                camera-orbit="270deg 5m" exposure="1" reveal="auto">
+            </model-viewer>
+            </div>
+            <img src="iphone-x-mockup.png">
+        </div>
+        <div class="about-text">
+            <p>Enjoy our extensive gallery with <strong>more than 90.000 bird images</strong> and easily upload your own
+                bird photos to
+                get started. Join our
+                community of bird enthusiasts and share your sightings!</p>
+        </div>
+    </section>
+</body>
+
+<script src="app.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+</html>
