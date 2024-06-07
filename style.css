@@ -292,12 +292,37 @@ strong{
     font-weight: bolder;
 }
 
-
-.HIW{
+.bento-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 3rem;
-    gap: 3rem;
+    justify-content: center;
+    gap: 7px;
 }
+.bento-squares{
+    display: flex;
+    gap: 7px;
+}
+.bento-rectangles{
+    display: flex;
+    gap: 7px;
+}
+.box{
+    width: 275px;
+    height: 275px;
+    border-radius: 20px;
+    background-color: #002900;
+}
+.rectangle{
+    width: 557px;
+    height: 218px;
+    border-radius: 20px;
+    background-color: #002900;
+}
+.heatmap{
+    width: 275px;
+    height: 218px;
+    border-radius: 20px;
+    background-color: #002900;
+}
+
+
