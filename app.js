@@ -1,3 +1,7 @@
+window.onload = function() {
+    let load_screen = document.querySelector(".loading");
+    load_screen.style.display = 'none';
+};
 
 const parallax_el = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
