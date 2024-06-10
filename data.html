@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdSense - The Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<style>
+    *,
+    *::after,
+    *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #252525;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: #191919;
+        width: 95%;
+        height: 95%;
+        border-radius: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .dark-container {
+        width: 378px;
+        height: 100%;
+        border-radius: 30px;
+        background-color: #111111;
+    }
+
+    .side-bar {
+        width: 105px;
+        height: 100%;
+        border-radius: 30px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .side-bar img {
+        width: 75px;
+        padding: 40px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="dark-container">
+            <div class="side-bar">
+                <a href="/"><img src="./assets/logopb.png"></a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+</html>
